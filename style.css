@@ -14,6 +14,10 @@ body {
 
 .container {
   margin: 5px;
-  border: 2px solid black;
-  position: relative;
+  border: 1px solid black;
+  min-width: 300px;
+}
+
+.buttons>* {
+  background-color: rgb(157, 234, 15);
 }

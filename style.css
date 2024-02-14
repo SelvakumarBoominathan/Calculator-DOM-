@@ -9,47 +9,69 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #81b29a;
 }
-
 
 .container {
   padding: 5px;
-  background-color: #1c1d1c;
+  background-color: #9c597f;
   border: 1px solid rgb(0, 0, 0);
   box-shadow: 0 4px 8px rgba(193, 146, 146, 0.5);
   min-width: 300px;
-  min-height: 250px;
+  width: 400px;
+  min-height: 300px;
   border-radius: 5px;
 }
 
 .display {
-  display: block;
-  min-height: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-height: 70px;
   width: 100%;
-  background-color: rgb(73, 176, 213);
+  background-color: rgb(2, 35, 48);
   color: white;
   font-size: x-large;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
   border-radius: 5px;
+  text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .buttons {
   padding-top: 30px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .button {
   background-color: #b8b5c0;
   color: rgb(7, 6, 6);
   cursor: pointer;
-  border: none;
+  border: 0.25px solid black;
   border-radius: 10%;
-  width: 60px;
-  min-height: 20px;
+  min-width: 30px;
+  width: 4.5rem;
+  min-height: 30px;
+  height: 40px;
+  font-weight: 700;
+  font-size: x-large;
 }
 
 .row-Data {
   display: grid;
-  grid-template-columns: repeat(4, 0.25fr);
-  grid-template-rows: repeat(5, 0.20fr);
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: 1fr;
+  margin: 10px;
+}
+
+@media (width:350px) {
+  .row-Data {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 3px;
+  }
 }

@@ -19,7 +19,7 @@ const buttonValues = [
   ['7', '8', '9', '/'],
   ['4', '5', '6', '-'],
   ['1', '2', '3', '+'],
-  ['0', '00', '=']
+  ['0', '00', '=', '🐼']
 ];
 
 
@@ -39,9 +39,7 @@ buttonValues.forEach(rowvalue => {
 
 //EVENT LISTENERS
 
-
-// Event listener for button clicks
-buttonsDiv.addEventListener('click', function (event) {
+buttonsDiv.addEventListener('click', event => {
   const target = event.target;
   const value = target.getAttribute('data-value');
 

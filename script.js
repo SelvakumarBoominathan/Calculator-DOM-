@@ -30,13 +30,48 @@ buttonValues.forEach(rowvalue => {
     const buttons = document.createElement('button');
     buttons.textContent = value;
     buttons.setAttribute('data-value', value);
+    buttons.classList.add('button')
     row.appendChild(buttons);
   });
   buttonsDiv.appendChild(row);
 });
 
 
+//EVENT LISTENERS
 
+
+// Event listener for button clicks
+buttonsDiv.addEventListener('click', function (event) {
+  const target = event.target;
+  const value = target.getAttribute('data-value');
+
+  // Check if the clicked element is a button
+  if (target.tagName === 'BUTTON' && value) {
+    // Handle button click based on its value
+    switch (value) {
+      case 'C':
+        // Clear the display
+        displayInput.value = '';
+        break;
+      case '←':
+        // Remove the last character from the display
+        displayInput.value = displayInput.value.slice(0, -1);
+        break;
+      case '=':
+        // Evaluate the expression and display the result
+        try {
+          displayInput.value = eval(displayInput.value);
+        } catch (error) {
+          // Handle any errors
+          displayInput.value = 'Error';
+        }
+        break;
+      default:
+        // Append the clicked button value to the display
+        displayInput.value += value;
+    }
+  }
+});
 
 
 

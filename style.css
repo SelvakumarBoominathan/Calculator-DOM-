@@ -13,11 +13,43 @@ body {
 
 
 .container {
-  margin: 5px;
-  border: 1px solid black;
+  padding: 5px;
+  background-color: #1c1d1c;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 0 4px 8px rgba(193, 146, 146, 0.5);
   min-width: 300px;
+  min-height: 250px;
+  border-radius: 5px;
 }
 
-.buttons>* {
-  background-color: rgb(157, 234, 15);
+.display {
+  display: block;
+  min-height: 50px;
+  width: 100%;
+  background-color: rgb(73, 176, 213);
+  color: white;
+  font-size: x-large;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+
+.buttons {
+  padding-top: 30px;
+}
+
+.button {
+  background-color: #b8b5c0;
+  color: rgb(7, 6, 6);
+  cursor: pointer;
+  border: none;
+  border-radius: 10%;
+  width: 60px;
+  min-height: 20px;
+}
+
+.row-Data {
+  display: grid;
+  grid-template-columns: repeat(4, 0.25fr);
+  grid-template-rows: repeat(5, 0.20fr);
 }

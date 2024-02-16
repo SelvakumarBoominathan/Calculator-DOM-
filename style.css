@@ -14,17 +14,23 @@ body {
 
 }
 
-#title,
-#description {
+#title {
   margin-bottom: 10px;
   letter-spacing: 1px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #01161e;
+  text-shadow: -1px -1px 0 #b7b6b6,
+    -1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #969595;
 }
 
 #description {
   margin-bottom: 10px;
   letter-spacing: 1px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  font-weight: 500;
 }
 
 .container {

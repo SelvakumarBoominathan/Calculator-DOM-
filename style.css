@@ -85,11 +85,8 @@ body {
   gap: 10px;
 }
 
-/* @media (width:350px) {
-  .row-Data {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    gap: 3px;
+@media (max-width:350px) {
+  #description {
+    text-align: center;
   }
-} */
+}

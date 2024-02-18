@@ -85,7 +85,7 @@ body {
   gap: 10px;
 }
 
-@media (max-width:350px) {
+@media (max-width:450px) {
   #description {
     text-align: center;
   }
